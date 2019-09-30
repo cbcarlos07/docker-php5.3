@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  php53:
+    image: bylexus/apache-php53
+    container_name: php53
+    volumes:
+      - ./www:/var/www
+    ports:
+      - 80:80
+    network_mode: bridge  
