@@ -7,4 +7,8 @@ services:
       - ./www:/var/www
     ports:
       - 80:80
-    network_mode: bridge  
+    network_mode: bridge 
+networks:
+  default:
+    external:
+      name: mysq-network
